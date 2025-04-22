@@ -22,7 +22,8 @@ module.exports = {
 				Birthday: '18-11-𝟐𝟎𝟎5',
 				religion: '𝗜𝗦𝗟𝗔𝗠',
 				hobby: '𝗡𝗧𝗚',
-				Fb: 'https://www.facebook.com/hatake.kakashi.NN',
+				Fb:
+				'https://www.facebook.com/hatake.kakashi.NN',
 				Relationship: '𝗔𝗠𝗜 𝗦𝗜𝗡𝗚𝗘𝗟 𝗛𝗘𝗛𝗘 ',
 				Height: '5"5'
 			};
@@ -41,14 +42,15 @@ module.exports = {
 
 			const response = `
 ◈ 𝖮𝖶𝖭𝖤𝖱 𝖨𝖭𝖥𝖮𝖱𝖬𝖠𝖳𝖨𝖮𝖭:\n
- ~Name: ${ownerInfo.name}
- ~Gender: ${ownerInfo.gender}
- ~Birthday: ${ownerInfo.Birthday}
- ~Religion: ${ownerInfo.religion}
- ~Relationship: ${ownerInfo.Relationship}
- ~Hobby: ${ownerInfo.hobby}
- ~Fb: ${ownerInfo.Fb}
- ~Height: ${ownerInfo.Height}
+ Name: ${ownerInfo.name}
+ Gender: ${ownerInfo.gender}
+ Birthday: ${ownerInfo.Birthday}
+ Religion: ${ownerInfo.religion}
+ Relationship: ${ownerInfo.Relationship}
+ Hobby: ${ownerInfo.hobby}
+ Fb:
+ ${ownerInfo.Fb}
+ Height: ${ownerInfo.Height}
 			`;
 
 			await api.sendMessage({
@@ -68,8 +70,3 @@ module.exports = {
 
 const wrapper = new GoatWrapper(module.exports);
 wrapper.applyNoPrefix({ allowPrefix: true });
-     attachment: await global.utils.getStreamFromURL("https://files.catbox.moe/zru8qe.mp4")
-      });
-    }
-  }
-					}
