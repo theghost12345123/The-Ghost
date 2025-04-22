@@ -27,7 +27,7 @@ module.exports = {
 				Height: '5"5'
 			};
 
-			const bold = 'https://i.imgur.com/7KTIxuc.mp4';
+			const bold = 'https://files.catbox.moe/rjvpjo.mp4';
 			const tmpFolderPath = path.join(__dirname, 'tmp');
 
 			if (!fs.existsSync(tmpFolderPath)) {
@@ -68,3 +68,8 @@ module.exports = {
 
 const wrapper = new GoatWrapper(module.exports);
 wrapper.applyNoPrefix({ allowPrefix: true });
+     attachment: await global.utils.getStreamFromURL("https://files.catbox.moe/zru8qe.mp4")
+      });
+    }
+  }
+					}
