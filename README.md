@@ -27,8 +27,9 @@ A custom Facebook API has been used to fix and improve the bot's functionality.
 
 ## Troubleshooting
 For any issues or support:
-- **Telegram:** [https://telegram.me/si_rana252](https://telegram.me/si_rana252
-- **Facebook:** [https://www.facebook.com/sirana252](https://www.facebook.com/sirana252)
+- **Telegram:** [Telegram](https://telegram.me/si_rana252)
+- **Facebook:** [Facebook](https://www.facebook.com/sirana252)
+- **Instagram:** [Instagram](https://www.instagram.com/sirana252)
 
 ## Additional Resources
 - **C3C Files Download:** [Download Here](https://drive.google.com/file/d/1-MWoTyqES-V4H-QAIQDiC34-XMKju8hA/view?usp=drivesdk)
