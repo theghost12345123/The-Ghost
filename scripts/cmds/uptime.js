@@ -80,7 +80,7 @@ module.exports = {
 [ System Info ]
 • Uptime: ${formatUptime(os.uptime())}
 • CPU: ${cpuModel}
-• RAM: ${%2} / ${%5} GB
+• RAM: ${ramUsed} / ${ramTotal} GB
 • Disk: ${diskUsed} / ${diskTotal} GB
 • GPU: ${gpuModel}
 • Load: ${load}
