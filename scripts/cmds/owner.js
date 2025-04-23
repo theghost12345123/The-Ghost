@@ -1,72 +1,66 @@
-const { GoatWrapper } = require('fca-liane-utils');
 const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 
 module.exports = {
-	config: {
-		name: "owner",
-		author: "ɴʀʙ",
-		role: 0,
-		shortDescription: " ",
-		longDescription: "",
-		category: "admin",
-		guide: "{pn}"
-	},
+config: {
+  name: "owner",
+  aurthor:"Tokodori",// Convert By Goatbot Tokodori 
+   role: 0,
+  shortDescription: " ",
+  longDescription: "",
+  category: "admin",
+  guide: "{pn}"
+},
 
-	onStart: async function ({ api, event }) {
-		try {
-			const ownerInfo = {
-				name: '𝗡𝗜𝗥𝗢𝗕',
-				gender: '𝗠𝗔𝗟𝗘',
-				Birthday: '18-11-𝟐𝟎𝟎5',
-				religion: '𝗜𝗦𝗟𝗔𝗠',
-				hobby: '𝗡𝗧𝗚',
-				Fb:
-				'https://www.facebook.com/hatake.kakashi.NN',
-				Relationship: '𝗔𝗠𝗜 𝗦𝗜𝗡𝗚𝗘𝗟 𝗛𝗘𝗛𝗘 ',
-				Height: '5"5'
-			};
+  onStart: async function ({ api, event }) {
+  try {
+    const ownerInfo = {
+      name: '𝐍𝐈𝐑𝐎𝐁',
+      gender: 'MaLe',
+      age: '18+',
+      height: '𝐉𝐀𝐍𝐈 𝐍𝐀',
+      choise: '',
+      nick: '😒'
+    };
 
-			const bold = 'https://files.catbox.moe/rjvpjo.mp4';
-			const tmpFolderPath = path.join(__dirname, 'tmp');
+    const bold = 'https://files.catbox.moe/a86iqb.mp4'; // Replace with your Google Drive videoid link https://drive.google.com/uc?export=download&id=here put your video id
 
-			if (!fs.existsSync(tmpFolderPath)) {
-				fs.mkdirSync(tmpFolderPath);
-			}
+    const tmpFolderPath = path.join(__dirname, 'tmp');
 
-			const videoResponse = await axios.get(bold, { responseType: 'arraybuffer' });
-			const videoPath = path.join(tmpFolderPath, 'owner_video.mp4');
+    if (!fs.existsSync(tmpFolderPath)) {
+      fs.mkdirSync(tmpFolderPath);
+    }
 
-			fs.writeFileSync(videoPath, Buffer.from(videoResponse.data, 'binary'));
+    const videoResponse = await axios.get(bold, { responseType: 'arraybuffer' });
+    const videoPath = path.join(tmpFolderPath, 'owner_video.mp4');
 
-			const response = `
-◈ 𝖮𝖶𝖭𝖤𝖱 𝖨𝖭𝖥𝖮𝖱𝖬𝖠𝖳𝖨𝖮𝖭:\n
- Name: ${ownerInfo.name}
- Gender: ${ownerInfo.gender}
- Birthday: ${ownerInfo.Birthday}
- Religion: ${ownerInfo.religion}
- Relationship: ${ownerInfo.Relationship}
- Hobby: ${ownerInfo.hobby}
- Fb:
- ${ownerInfo.Fb}
- Height: ${ownerInfo.Height}
-			`;
+    fs.writeFileSync(videoPath, Buffer.from(videoResponse.data, 'binary'));
 
-			await api.sendMessage({
-				body: response,
-				attachment: fs.createReadStream(videoPath)
-			}, event.threadID, event.messageID);
+    const response = ` 
+╭[ .  ]•〆 NIROB 〆 ]  ─⦿
+╭────────────◊
+├‣ 𝐁𝐨𝐭 & 𝐎𝐰𝐧𝐞𝐫 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 
+├‣ 𝐍𝐚𝐦𝐞: ${ownerInfo.name}
+├‣ 𝐆𝐞𝐧𝐝𝐞𝐫:  ${ownerInfo.gender}
+├‣ 𝐀𝐠𝐞 .${ownerInfo.age}
+├‣ 𝐍𝐢𝐜𝐤 : ${ownerInfo.nick}
+├‣ 𝐂𝐡𝐨𝐢𝐬𝐞:  ${ownerInfo.choise}   
+├‣ 𝐇𝐞𝐢𝐠𝐡𝐭 : ${ownerInfo.height}
+╰────────────◊ 
+`;
 
-			fs.unlinkSync(videoPath);
+    await api.sendMessage({
+      body: response,
+      attachment: fs.createReadStream(videoPath)
+    }, event.threadID, event.messageID);
 
-			api.setMessageReaction('😍', event.messageID, (err) => {}, true);
-		} catch (error) {
-			console.error('Error in ownerinfo command:', error);
-			return api.sendMessage('An error occurred while processing the command.', event.threadID);
-		}
-	}
+    if (event.body.toLowerCase().includes('ownerinfo')) {
+      api.setMessageReaction('🖤', event.messageID, (err) => {}, true);
+    }
+  } catch (error) {
+    console.error('Error in ownerinfo command:', error);
+    return api.sendMessage('An error occurred while processing the command.', event.threadID);
+  }
+},
 };
-
-const wrapper = new GoatWrapper(module.exports);
-wrapper.applyNoPrefix({ allowPrefix: true });
