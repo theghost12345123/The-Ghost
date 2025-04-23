@@ -2,10 +2,9 @@ name: nirob
 
 on:
   push:
-    branches: [main]
+    branches: [ shan ]
   pull_request:
-    branches: [main]
-
+    branches: [ shan ]
 jobs:
   build:
     runs-on: ubuntu-latest
