@@ -76,7 +76,7 @@ module.exports = {
       const query = content.slice(6).trim();
       if (!query) return;
 
-      api.setMessageReaction("🖤", event.messageID, () => {}, true);
+      api.setMessageReaction("⏳", event.messageID, () => {}, true);
       const videos = await fetchTikTokVideos(`${query} anime edit`);
 
       if (!videos || videos.length === 0) {
