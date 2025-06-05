@@ -38,16 +38,20 @@ config: {
     fs.writeFileSync(videoPath, Buffer.from(videoResponse.data, 'binary'));
 
     const response = ` 
-╭[ .  ]•〆 NIROB 〆 ]  ─⦿
-╭────────────◊
-├‣ 𝐁𝐨𝐭 & 𝐎𝐰𝐧𝐞𝐫 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 
-├‣ 𝐍𝐚𝐦𝐞: ${ownerInfo.name}
-├‣ 𝐆𝐞𝐧𝐝𝐞𝐫:  ${ownerInfo.gender}
-├‣ 𝐀𝐠𝐞 .${ownerInfo.age}
-├‣ 𝐍𝐢𝐜𝐤 : ${ownerInfo.nick}
-├‣ 𝐂𝐡𝐨𝐢𝐬𝐞:  ${ownerInfo.choise}   
-├‣ 𝐇𝐞𝐢𝐠𝐡𝐭 : ${ownerInfo.height}
-╰────────────◊ 
+┏━━━━━━━━━━━━━━━━━━━┓
+┃      🫧 𝗢𝗪𝗡𝗘𝗥 𝗜𝗡𝗙𝗢 🫧      
+┣━━━━━━━━━━━━━━━━━━━┫
+┃ 👤 𝐍𝐚𝐦𝐞      : 𝙔𝙚𝙖𝙨𝙞𝙣
+┃ 🚹 𝐆𝐞𝐧𝐝𝐞𝐫    : 𝐌𝐚𝐥𝐞
+┃ ❤️ 𝐑𝐞𝐥𝐚𝐭𝐢𝐨𝐧  : 𝙎𝙞𝙣𝙜𝙡𝙚😞
+┃ 🎂 𝐀𝐠𝐞       : 19
+┃ 🕌 𝐑𝐞𝐥𝐢𝐠𝐢𝐨𝐧  : 𝐈𝐬𝐥𝐚𝐦
+┃ 🏡 𝐀𝐝𝐝𝐫𝐞𝐬𝐬  : 𝘾𝙪𝙢𝙞𝙡𝙡𝙖/𝘿𝙝𝙖𝙠𝙖 𝐁𝐚𝐧𝐠𝐥𝐚𝐝𝐞𝐬𝐡
+┣━━━━━━━━━━━━━━━━━━━┫
+┃ 🎭 𝐓𝐢𝐤𝐭𝐨𝐤  : its_me_tufan01
+┃ 🫧 𝙒𝙝𝙖𝙩𝙖𝙥𝙥 : 𝙉𝙖𝙢𝙗𝙚𝙧 𝙙𝙞𝙮𝙖 𝙠𝙖𝙟 𝙠𝙞?
+┃ 🌐 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 : https://www.facebook.com/profile.php?id=61552257412748
+┣━━━━━━━━━━━━━━━━━━━┫
 `;
 
     await api.sendMessage({
