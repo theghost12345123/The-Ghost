@@ -4,7 +4,7 @@ module.exports = {
     name: "info",
     aliases: ["info", "in4"],
     version: "2.0",
-    author: "nirob",
+    author: "𝙔𝙚𝙖𝙨𝙞𝙣 ❤︎",
     countDown: 5,
     role: 0,
     shortDescription: {
@@ -33,9 +33,9 @@ module.exports = {
   },
 
   sendInfo: async function (message) {
-    const botName = "𝐤𝐚𝐤𝐚𝐬𝐡𝐢 ꨄ︎ ";
+    const botName = "𝙔𝙚𝙖𝙨𝙞𝙣 𝗯𝗼𝘁 ❤︎";
     const botPrefix = "/";
-    const authorName = "𝐍𝐢𝐫𝐨𝐛";
+    const authorName = "𝙔𝙚𝙖𝙨𝙞𝙣 ❤︎";
     const authorFB = "🐸";
     const authorInsta = "𝐡𝐞𝐡𝐞";
     const status = "𝐋𝐚𝐯 𝐥𝐨𝐬 𝐧𝐚𝐢 🙂";
