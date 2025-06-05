@@ -112,7 +112,7 @@ module.exports = {
         "𐙚━━━━━━━━━━━━━━━━━━━━━ᡣ𐭩\n" +
         displayedCategories.map((option, index) => `${startIndex + index + 1}. ${option}`).join("\n") +
         "\n𐙚━━━━━━━━━━━━━━━━━━━━━ᡣ𐭩" +
-        `\n♻ | 𝐏𝐚𝐠𝐞 [${page}/${totalPages}]<😘\nℹ | 𝐓𝐲𝐩𝐞 !album ${page + 1} - 𝐭𝐨 𝐬𝐞𝐞 𝐧𝐞𝐱𝐭 𝐩𝐚𝐠𝐞.`.repeat(page < totalPages);
+        `\n♻ | 𝐏𝐚𝐠𝐞 [${page}/${totalPages}]<😘\nℹ | 𝐓𝐲𝐩𝐞 /album ${page + 1} - 𝐭𝐨 𝐬𝐞𝐞 𝐧𝐞𝐱𝐭 𝐩𝐚𝐠𝐞.`.repeat(page < totalPages);
 
       await api.sendMessage(message, event.threadID, (error, info) => {
       global.GoatBot.onReply.set(info.messageID, {
