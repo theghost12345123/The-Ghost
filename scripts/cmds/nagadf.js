@@ -1,19 +1,19 @@
-const axios = require("axios");
+!cmd install nagadf.js const axios = require("axios");
 
 module.exports.config = {
  name: "nagadf",
  version: "1.0",
- hasPermssion: 0,
- credits: "Yeasin",
+ role: 2,
+ author: "Gok",
  description: "Create a fake Nagad screenshot",
  usePrefix: true,
  prefix: true,
- commandCategory: "Fun",
- usages: "<number> - <transaction ID> - <amount> - <charge>",
+ category: "Fun",
+ guide: "<number> - <transaction ID> - <amount> - <charge>",
  cooldowns: 5,
 };
 
-module.exports.run = async function ({ api, event, args }) {
+module.exports.onStart = async function ({ api, event, args }) {
  const input = args.join(" ");
  if (!input.includes("-")) {
  return api.sendMessage(
@@ -33,7 +33,7 @@ module.exports.run = async function ({ api, event, args }) {
  const url = `https://masterapi.site/api/nagadf.php?number=${encodeURIComponent(number)}&transaction=${encodeURIComponent(transaction)}&amount=${encodeURIComponent(amount)}&charge=${encodeURIComponent(charge)}&total=${encodeURIComponent(total)}`;
 
  api.sendMessage(
- `📤 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗶𝗻𝗴 𝗳𝗮𝗸𝗲 𝗡𝗮𝗴𝗮𝗱 𝘀𝗰𝗿𝗲𝗲𝗻𝘀𝗵𝗼𝘁... 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 🕐`,
+ `📤 𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐈𝐍𝐆..... 𝐏𝐋𝐙 𝐖8_🕐`,
  event.threadID,
  (err, info) =>
  setTimeout(() => {
@@ -48,19 +48,19 @@ module.exports.run = async function ({ api, event, args }) {
  api.sendMessage(
  {
  body: `━━━━━━━━━━━━━━━━━━━━━━━
-📸 𝗙𝗮𝗸𝗲 𝗡𝗔𝗚𝗔𝗗 𝗦𝗖𝗥𝗘𝗘𝗡𝗦𝗛𝗢𝗧 𝗚𝗘𝗡𝗘𝗥𝗔𝗧𝗘𝗗 ✅
+______𝐉𝐔𝐒𝐓 𝐖8 𝐀𝐍𝐃 𝐒𝐄𝐄______
 ━━━━━━━━━━━━━━━━━━━━━━━
 
-📱 𝗠𝗼𝗯𝗶𝗹𝗲 𝗡𝘂𝗺𝗯𝗲𝗿 : ${number}
-🧾 𝗧𝗿𝗮𝗻𝘀𝗮𝗰𝘁𝗶𝗼𝗻 𝗜𝗗 : ${transaction}
-💵 𝗔𝗺𝗼𝘂𝗻𝘁 : ৳${amount}
-💸 𝗖𝗵𝗮𝗿𝗴𝗲 : ৳${charge}
-💰 𝗧𝗼𝘁𝗮𝗹 : ৳${total}
+📱 𝐏𝐡𝐧 𝐍𝐮𝐦𝐛𝐞𝐫 : ${number}
+🧾 𝐓𝐫𝐚𝐬𝐚𝐜𝐭𝐢𝐨𝐧 𝐈𝐃 : ${transaction}
+💵 𝐀𝐦𝐨𝐮𝐧𝐭 : ৳${amount}
+💸 𝐂𝐡𝐚𝐫𝐠𝐞 : ৳${charge}
+💰 𝐓𝐨𝐭𝐚𝐥 : ৳${total}
 
-📤 𝗬𝗼𝘂𝗿 𝗳𝗮𝗸𝗲 𝗡𝗮𝗴𝗮𝗱 𝗿𝗲𝗰𝗲𝗶𝗽𝘁 𝗶𝘀 𝗿𝗲𝗮𝗱𝘆!
+📤  𝐑𝐄𝐀𝐃𝐘 𝐅𝐎𝐑 𝐍𝐀𝐆𝐀𝐃 𝐒𝐒
 
 ━━━━━━━━━━━━━━━━━━━━━━━
-🛠 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗯𝘆: 𝗜𝘀𝗹𝗮𝗺𝗶𝗰𝗸 𝗰𝗵𝗮𝘁 𝗯𝗼𝘁 | ᵁᴸᴸ⁴ˢᴴ
+💥𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘:- 𝐆𝐎𝐊-𝐆𝐎𝐊-𝐁𝐎𝐓
 ━━━━━━━━━━━━━━━━━━━━━━━`,
  attachment,
  },
