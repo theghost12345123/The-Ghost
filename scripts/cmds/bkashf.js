@@ -2,18 +2,17 @@ const axios = require("axios");
 
 module.exports.config = {
  name: "bkashf",
- version: "1.0",
- hasPermssion: 0,
- credits: "Yeasin",
+ role: 2,
+ author: "Gok",
  description: "Create a fake Bkash screenshot",
  usePrefix: true,
  prefix: true,
- commandCategory: "Fun",
- usages: "<number> - <transaction ID> - <amount>",
+ category: "Fun",
+ guide:"<number> - <transaction ID> - <amount>",
  cooldowns: 5,
 };
 
-module.exports.run = async function ({ api, event, args }) {
+module.exports.onStart = async function ({ api, event, args }) {
  const input = args.join(" ");
  if (!input.includes("-")) {
  return api.sendMessage(
@@ -31,7 +30,7 @@ module.exports.run = async function ({ api, event, args }) {
  const url = `https://masterapi.site/api/bkashf.php?number=${encodeURIComponent(number)}&transaction=${encodeURIComponent(transaction)}&amount=${encodeURIComponent(amount)}`;
 
  api.sendMessage(
- `📤 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗶𝗻𝗴 𝗳𝗮𝗸𝗲 𝗕𝗸𝗮𝘀𝗵 𝘀𝗰𝗿𝗲𝗲𝗻𝘀𝗵𝗼𝘁... 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 🕐`,
+ `𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐢𝐧𝐠.....𝐏𝐋𝐙 𝐖8-⌛`,
  event.threadID,
  (err, info) =>
  setTimeout(() => {
@@ -45,7 +44,8 @@ module.exports.run = async function ({ api, event, args }) {
 
  api.sendMessage(
  {
- body: `━━━━━━━━━━━━━━━━━━━━━━━\n📸 𝗙𝗮𝗸𝗲 𝗕𝗞𝗔𝗦𝗛 𝗦𝗖𝗥𝗘𝗘𝗡𝗦𝗛𝗢𝗧 𝗚𝗘𝗡𝗘𝗥𝗔𝗧𝗘𝗗 ✅\n━━━━━━━━━━━━━━━━━━━━━━━\n\n📱 𝗠𝗼𝗯𝗶𝗹𝗲 𝗡𝘂𝗺𝗯𝗲𝗿 : ${number}\n🧾 𝐓𝐫𝐚𝐧𝐬𝐚𝐜𝐭𝐢𝐨𝐧 𝐈𝐃: ${transaction}\n💵 𝐀𝐦𝐨𝐮𝐧𝐭: ৳${amount}\n\n📤 𝗬𝗼𝘂𝗿 𝗳𝗮𝗸𝗲 𝗕𝗸𝗮𝘀𝗵 𝗿𝗲𝗰𝗲𝗶𝗽𝘁 𝗶𝘀 𝗿𝗲𝗮𝗱𝘆!\n\n━━━━━━━━━━━━━━━━━━━━━━━\n\n🛠 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗯𝘆: 𝗜𝘀𝗹𝗮𝗺𝗶𝗰𝗸 𝗰𝗵𝗮𝘁 𝗯𝗼𝘁 | ᵁᴸᴸ⁴ˢᴴ\n\n━━━━━━━━━━━━━━━━━━━━━━━`,
+ body: `━━━━━━━━━━━━━━━━━━━━━━━\n 
+______𝐉𝐔𝐒𝐓 𝐖8 𝐀𝐍𝐃 𝐒𝐄𝐄_______ ✅\n━━━━━━━━━━━━━━━━━━━━━━━\n\n📱 𝐏𝐡𝐧 𝐍𝐮𝐦𝐛𝐞𝐫 : ${number}\n🧾 𝐓𝐫𝐚𝐧𝐬𝐚𝐜𝐭𝐢𝐨𝐧 𝐈𝐃: ${transaction}\n💵 𝐀𝐦𝐨𝐮𝐧𝐭: ৳${amount}\n\n📤𝐑𝐄𝐀𝐃𝐘 𝐅𝐎𝐑-𝐘𝐎𝐔𝐑  \n\n━━━━━━━━━━━━━━━━━━━━━━━\n\n 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘:- 𝐆𝐎𝐊-𝐆𝐎𝐊-𝐁𝐎𝐓 \n\n━━━━━━━━━━━━━━━━━━━━━━━`,
  attachment,
  },
  event.threadID,
