@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 module.exports.config = {
+=======
+/cmd install call.js module.exports.config = {
+>>>>>>> 4843034469b2907b0d45b8d6e4c05e01e0125545
  name: "call",
  version: "1.0.0",
  role: 2,
@@ -30,4 +34,8 @@ module.exports.onStart = async ({ api, event, args }) => {
  return api.sendMessage(`❌ ত্রুটি: ${error.message}`, event.threadID, event.messageID);
  }
  });
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> 4843034469b2907b0d45b8d6e4c05e01e0125545
