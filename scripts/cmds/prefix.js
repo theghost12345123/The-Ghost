@@ -19,10 +19,10 @@ body: `
 ‣𝐘𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 𝐩𝐫𝐞𝐟𝐢𝐱:/
 
 ‣ 𝐀𝐝𝐦𝐢𝐧 
-‣ NɪʀᴏB ఌ︎
+‣ Yeasin
 
 ‣ 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 ⓕ
-yung zhen
+Yeasin Ghumaitase 
 \n\n\n  `,
 attachment: await global.utils.getStreamFromURL("https://files.catbox.moe/8ll3tv.mp4")
 });
