@@ -1,0 +1,157 @@
+* [33mf8eb272[m[33m ([m[1;31morigin/shan[m[33m, [m[1;31morigin/HEAD[m[33m)[m Create call.js
+* [33m30230ec[m Delete scripts/cmds/call.js
+* [33md7607fc[m Update call.js
+* [33mb5e1363[m Update pending.js
+* [33m2f1494d[m Update pending.js
+* [33m4b967f3[m Update call.js
+* [33m0349359[m Update pending.js
+* [33mda09a05[m Update sms.js
+* [33m6bb4a5e[m Update call.js
+* [33m84c1b50[m Update sms.js
+* [33m3872e3d[m Update call.js
+* [33mf9b417a[m Create help.js
+* [33m5702728[m Delete scripts/cmds/help.js
+* [33m17b1ee2[m Update help.js
+* [33m673ed24[m Delete scripts/cmds/😂.js
+* [33m2615157[m Delete scripts/cmds/😆.js
+* [33m75e2a3a[m Delete scripts/cmds/😒.js
+* [33m9c8d8b0[m Update 😂.js
+* [33m21f1151[m Create 😒.js
+* [33m208fd2a[m Create 😆.js
+* [33m5fbcf75[m Create 😂.js
+* [33mca1dd20[m Create xyz.js
+[31m|[m * [33md6abf48[m[33m ([m[1;36mHEAD -> [m[1;32mshan[m[33m)[m Save changes before pull
+[31m|[m * [33mc8cecfc[m WIP: update help command
+[31m|[m[31m/[m  
+* [33m512e0ad[m Create autodl.js
+* [33m5f37ace[m Update and rename sing.js to song.js
+* [33mc3cf4ef[m Delete scripts/cmds/song.js
+* [33me2b7224[m Create sing.js
+* [33m5704baf[m Create dalle.js
+* [33mb635dbd[m Create alldl.js
+*   [33ma528176[m segs
+[33m|[m[34m\[m  
+[33m|[m * [33m4843034[m Delete scripts/cmds/autolink.js
+[33m|[m * [33mb59bb5a[m Delete scripts/cmds/done.js
+[33m|[m * [33m52fdb20[m Update prefix.js
+[33m|[m * [33m0f249b0[m Delete scripts/cmds/autodl.js
+[33m|[m * [33me688d0a[m Update autodl.js
+[33m|[m * [33m5f7f9de[m Update bby.js
+[33m|[m * [33mb64ca98[m Update bby.js
+[33m|[m * [33m4b7c874[m Create sms.js
+[33m|[m * [33mad70150[m Create call.js
+* [34m|[m [33m1ec8182[m segs
+[34m|[m[34m/[m  
+* [33m9fe9fd0[m Update welcome.js
+* [33m3a1f3d6[m Delete scripts/cmds/autosend.js
+* [33m9f86ded[m Rename autosendjs to autosend.js
+* [33md502f79[m Rename autosend.js to autosendjs
+* [33m0f102cb[m Delete .github directory
+* [33mdd687f3[m segs
+* [33m5752790[m Create animirror.js
+* [33md9ba44a[m Update nagadf.js
+* [33mb7e2e3c[m Update bkashf.js
+* [33m1ec81c7[m Update pending.js
+* [33mde1d445[m Update account.txt
+* [33m3e335be[m Create done.js
+* [33m9440164[m Create bkashf.js
+* [33mc384d25[m Create nagadf.js
+* [33mc2f6d1e[m Update hack.js
+* [33m94e438a[m Update album.js
+* [33m6836e08[m Update fakechat.js
+* [33mc3f7413[m Update whitelist.js
+* [33m880d989[m Update bby.js
+* [33m3efbf66[m Update en.lang
+* [33m5af4b9c[m Update en.lang
+* [33m2426871[m Create edit.js
+* [33m342c439[m Update admins.js
+* [33md070cfb[m Update bby.js
+* [33m779f667[m Update admins.js
+* [33m48bcf67[m Update config.json
+* [33m2771add[m Update account.txt
+* [33m1d184c7[m Update album.js
+* [33mcea1294[m Update bby.js
+* [33mcad1617[m Update config.json
+* [33m4d77096[m Update config.json
+* [33m9a5e15a[m Rename configjson to config.json
+* [33m9dfc6fd[m Delete config.json
+* [33m269b248[m Update ban.js
+* [33m9762230[m Create config.json
+* [33mb726089[m Rename config.json to configjson
+* [33m668585a[m Update account.txt
+* [33m92ff279[m Create pending.js
+* [33md4314a4[m Delete scripts/cmds/pending.js
+* [33m98bf48a[m Create autosend.js
+* [33m9789772[m Create hack.js
+* [33m2efa6f8[m Create fakechat.js
+* [33m9dbf582[m Update owner.js
+* [33m4cec8f2[m Update info.js
+* [33m0ad6a1e[m Update help.js
+* [33m5af3829[m Update help.js
+* [33m24cad0f[m Create ytb.js
+* [33mb9def37[m Create bby.js
+* [33mdf22399[m Delete scripts/cmds/bby.js
+* [33mb4ec2e8[m Create album.js
+* [33mb8b9205[m Delete scripts/cmds/album.js
+* [33m8a913ee[m Update en.lang
+* [33mecf66e9[m Update config.json
+* [33ma007e6d[m Update account.txt
+* [33me50ab12[m Update account.txt
+* [33mee0fd9a[m Update config.json
+* [33mb37916a[m Delete scripts/cmds/file.js
+* [33m9490ff6[m Create File.js
+* [33ma3e0b76[m Update en.lang
+* [33m7896ff0[m Update account.txt
+* [33mec2625f[m Update config.json
+* [33m72db1fc[m Update account.txt
+* [33md846505[m Update anisar.js
+* [33mefa3feb[m Update file.js
+* [33m4cc8dde[m Update uptime.js
+* [33m419457d[m Update account.txt
+* [33ma24c460[m Update account.txt
+* [33m3b8b035[m Create catbox.js
+* [33md68e1d9[m Update config.json
+* [33mffa0ea4[m Update account.txt
+* [33m023b700[m Update config.json
+* [33m683a42d[m Update account.txt
+* [33m16626cc[m Update uptime.js
+* [33me5f5aca[m Create uptime.js
+* [33mad1ba03[m Delete scripts/cmds/uptime.js
+* [33me1e1bdb[m Update uptime.js
+* [33m134d30d[m Delete .github/workflows/test run
+* [33m1730234[m Update datetime.js
+* [33mbd5d8d4[m Update config.json
+* [33m6d9cfd8[m Update config.json
+* [33m16b09fc[m Update account.txt
+* [33m3afd2da[m Update EwrShAn.yml
+* [33m7cc257d[m Create test run
+* [33m8e5f7fb[m Update EwrShAn.yml
+* [33mab86a1b[m Update uptime.js
+* [33m46831c3[m Create offbot.js
+* [33m0a07bae[m Create info.js
+* [33m5e82941[m Delete scripts/cmds/adminadd.js
+* [33m58c7a76[m Update admins.js
+* [33ma22a2fd[m Update help.js
+* [33m9fcb305[m Update prefix.js
+* [33m238429b[m Update owner.js
+* [33m50ebb77[m Update account.txt
+* [33me573d55[m Create kakashi2.js
+* [33m39c1cad[m Update owner.js
+* [33ma1e09d5[m Update owner.js
+* [33m915e777[m Update welcome.js
+* [33mcda57ad[m Create anisar.js
+* [33mb698117[m Update uptime.js
+* [33mc968bec[m Update prefix.js
+* [33m4d39971[m Update owner.js
+* [33m278bc77[m Update help2.js
+* [33m451dd31[m Update help.js
+* [33m42ef7cb[m Update bby.js
+* [33m6b809bf[m Update admins.js
+* [33mee5a8cb[m Update account.txt
+* [33mdf32430[m Update config.json
+* [33mb870d20[m Update README.md
+* [33mc85446f[m Update README.md
+* [33mbe85de1[m Create account.txt
+* [33m01f4a9c[m Update config.json
+* [33m7c314ef[m Update owner.js
+* [33m0c16b24[m Initial commit
