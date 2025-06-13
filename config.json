@@ -175,7 +175,9 @@
       "7271330272945067",
       "10058059010929227",
       "9313861625381152",
-      "8554096387946646"
+      "8554096387946646",
+      "9878724268887045",
+      "9711479865541936"
     ],
     "notes": "if you enable this feature, only the thread in the whiteListThreadIds list can use the bot",
     "how_it_work": "if you enable both whiteListMode and whiteListModeThread, the system will check if the user is in whiteListIds, then check if the thread is in whiteListThreadIds, if one of the conditions is true, the user can use the bot"
