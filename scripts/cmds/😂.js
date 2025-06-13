@@ -1,4 +1,5 @@
-module.exports = {
+console.log("Triggered by message:", text);
+.exports = {
   config: {
     name: "😂",
     version: "0.0.1",
