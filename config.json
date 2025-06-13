@@ -89,7 +89,7 @@
     "port": 3001
   },
   "serverUptime": {
-    "enable": true,
+    "enable": false,
     "port": 3001,
     "socket": {
       "enable": true,
@@ -179,8 +179,7 @@
       "9313861625381152",
       "8554096387946646",
       "9878724268887045",
-      "9324925137607650",
-      "9711479865541936"
+      "9324925137607650"
     ],
     "notes": "if you enable this feature, only the thread in the whiteListThreadIds list can use the bot",
     "how_it_work": "if you enable both whiteListMode and whiteListModeThread, the system will check if the user is in whiteListIds, then check if the thread is in whiteListThreadIds, if one of the conditions is true, the user can use the bot"
