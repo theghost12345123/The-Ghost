@@ -5,7 +5,7 @@ module.exports.config = {
   author: "𝙔𝙚𝙖𝙨𝙞𝙣 𝗯𝗼𝘁", //ক্রেডিট চেঞ্জ করলে এপিআই বন্ধ করে দেব।
   description: "অনবরত এসএমএস বোম্বার, বন্ধ করতে /sms off",
   category: "Tool",
-  usages: "/sms 01xxxxxxxxx অথবা /sms off",
+  guide: "/sms 01xxxxxxxxx অথবা /sms off",
   cooldowns: 0,
   dependencies: { "axios": "" }
 };
@@ -49,4 +49,8 @@ module.exports.onStart = async ({ api, event, args }) => {
       }
     }
   })();
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> 5f826bfa37596c145c0dee848e9aff6fc51060d8

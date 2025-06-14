@@ -5,7 +5,7 @@ module.exports.config = {
  author: "Yeasin", //don't change my credit 
  description: "কল বোম্বার, শুধুমাত্র বাংলাদেশি নাম্বারের জন্য",
  category: "Tool",
- usages: "/call 01xxxxxxxxx",
+ guide: "/call 01xxxxxxxxx",
  cooldowns: 15,
  guide: { "axios": "" }
 };
@@ -30,4 +30,8 @@ module.exports.onStart = async ({ api, event, args }) => {
  return api.sendMessage(`❌ ত্রুটি: ${error.message}`, event.threadID, event.messageID);
  }
  });
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> 5f826bfa37596c145c0dee848e9aff6fc51060d8
