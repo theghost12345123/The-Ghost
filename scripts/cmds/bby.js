@@ -5,7 +5,7 @@ const baseApiUrl = async () => {
 
 module.exports.config = {
     name: "bby",
-    aliases: ["baby", "bbe", "bot", "Yeasin", "babe"],
+    aliases: ["baby", "bbe", "bot", "yeasin", "babe"],
     version: "6.9.0",
     author: "dipto",
     countDown: 0,
@@ -159,7 +159,7 @@ module.exports.onChat = async ({
 }) => {
     try {
         const body = event.body ? event.body?.toLowerCase() : ""
-        if (body.startsWith("baby") || body.startsWith("bby") || body.startsWith("বেবি") || body.startsWith("bot") || body.startsWith("Yeasin") || body.startsWith("babu") || body.startsWith("বট")) {
+        if (body.startsWith("baby") || body.startsWith("bby") || body.startsWith("বেবি") || body.startsWith("bot") || body.startsWith("yeasin") || body.startsWith("babu") || body.startsWith("বট")) {
             const arr = body.replace(/^\S+\s*/, "")
             const randomReplies = ["🦆", "𝙃𝙤𝙥 𝙗𝙚𝙙𝙖🦆, 𝘽𝙤𝙨𝙨 বল 𝙗𝙤𝙨𝙨🦆", "𝙒𝙝𝙖𝙩'𝙨 𝙪𝙥?", "বলো কি বলবা, সবার সামনে বলবা নাকি?🦆💨","𝐀𝐬𝐬𝐚𝐥𝐚𝐦𝐮 𝐚𝐥𝐚𝐢𝐤𝐮𝐦", "𝘽𝘼𝘽𝙐 𝙆𝙃𝙐𝘿𝘼 𝙇𝘼𝙂𝙎𝙀🦆"];
             if (!arr) {
