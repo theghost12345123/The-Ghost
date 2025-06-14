@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 module.exports.config = {
-=======
-/cmd install sms.js module.exports.config = {
->>>>>>> 4843034469b2907b0d45b8d6e4c05e01e0125545
   name: "sms",
   version: "2.0.0",
   role: 2,
@@ -53,8 +49,4 @@ module.exports.onStart = async ({ api, event, args }) => {
       }
     }
   })();
-<<<<<<< HEAD
 };
-=======
-};
->>>>>>> 4843034469b2907b0d45b8d6e4c05e01e0125545

@@ -16,16 +16,16 @@ module.exports = {
     const text = event.body?.trim();
     if (!text || !text.startsWith("😂")) return;
 
-    const audioUrl = "http://aryan-xy.onrender.com/raw/n-6_nUMt.mp3"
+    const audioUrl = "http://aryan-xy.onrender.com/raw/8nNjiFZT.mp3";
 
     try {
       await message.reply({
-        body: " ওরে  কি সুন্দর হাসি রে 😹😂",
+        body: "",
         attachment: await global.utils.getStreamFromURL(audioUrl)
       });
-      message.react("😁");
-    } catch {
-      message.reply("❌ Failed to send audio. Please try again later.");
+      message.react("😂");
+    } catch (err) {
+      console.error(err);
     }
   }
 };
