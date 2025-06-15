@@ -1,41 +1,67 @@
-const axios = require('axios');
-const { GoatWrapper } = require('fca-liane-utils');
+const axios = require("axios");
+const xyz = "aryan";
 
 module.exports = {
-		config: {
-				name: "imgur",
-				version: "1.0.0",
-				role: 0,
-				author: "cliff",
-				shortDescription: "imgur upload",
-				countDown: 0,
-				category: "imgur",
-				guide: {
-						en: '[reply to image]'
-				}
-		},
+  config: {
+    name: "imgur",
+    version: "0.0.1",
+    author: "ArYAN",
+    countDown: 0,
+    role: 0,
+    shortDescription: "Upload an image to Imgur",
+    longDescription: "Upload any image to Imgur and receive a direct link.",
+    category: "utility",
+    guide: "{pn} reply to an image, video, or provide a URL"
+  },
 
-		onStart: async ({ api, event }) => {
-				let link2;
+  onStart: async function ({ api, event, args }) {
+    try {
+      api.setMessageReaction("⏳", event.messageID, () => {}, true);
 
-				if (event.type === "message_reply" && event.messageReply.attachments.length > 0) {
-						link2 = event.messageReply.attachments[0].url;
-				} else if (event.attachments.length > 0) {
-						link2 = event.attachments[0].url;
-				} else {
-						return api.sendMessage('No attachment detected. Please reply to an image.', event.threadID, event.messageID);
-				}
+      let imageUrl = "";
 
-				try {
-						const res = await axios.get(`http://158.101.198.227:8609/imgur2?link=${encodeURIComponent(link2)}`);
-						const link = res.data.uploaded.image;
-						return api.sendMessage(`Here is the Imgur link for the image you provided:\n\n${link}`, event.threadID, event.messageID);
-				} catch (error) {
-						console.error("Error uploading image to Imgur:", error);
-						return api.sendMessage("An error occurred while uploading the image to Imgur.", event.threadID, event.messageID);
-				}
-		}
+      if (event.messageReply && event.messageReply.attachments.length > 0) {
+        imageUrl = event.messageReply.attachments[0].url;
+      } else if (args.length > 0) {
+        imageUrl = args.join(" ");
+      }
+
+      if (!imageUrl) {
+        api.setMessageReaction("", event.messageID, () => {}, true); 
+        return api.sendMessage(
+          "❌ Please reply to an image, video, or provide a URL!",
+          event.threadID,
+          event.messageID
+        );
+      }
+
+      const response = await axios.get(
+        `https://${xyz}-xy-z.vercel.app/imgur?url=${encodeURIComponent(imageUrl)}`
+      );
+
+      if (response.data && response.data.success && response.data.link) {
+        api.setMessageReaction("✅", event.messageID, () => {}, true);
+        return api.sendMessage(
+          `${response.data.link}`,
+          event.threadID,
+          event.messageID
+        );
+      } else {
+        api.setMessageReaction("", event.messageID, () => {}, true);
+        return api.sendMessage(
+          "❌ Failed to upload the image.",
+          event.threadID,
+          event.messageID
+        );
+      }
+    } catch (error) {
+      console.error(error);
+      api.setMessageReaction("", event.messageID, () => {}, true);
+      return api.sendMessage(
+        "⚠️ An error occurred while uploading the image.",
+        event.threadID,
+        event.messageID
+      );
+    }
+  }
 };
-
-const wrapper = new GoatWrapper(module.exports);
-wrapper.applyNoPrefix({ allowPrefix: true });
